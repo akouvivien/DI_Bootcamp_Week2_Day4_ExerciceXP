@@ -228,11 +228,10 @@ function rentalCarCost() {
     } while (!typeof("1"));
     return value
 
-}
+}rentalCarCost()
 // Define a function called totalVacationCost() that returns the total cost of the user’s vacation by calling the 3 functions that you created above.
 // Example : The car cost: $x, the hotel cost: $y, the plane tickets cost: $z.
 // Hint: You have to call the functions hotelCost(), planeRideCost() and rentalCarCost() inside the function totalVacationCost().
-// rentalCarCost()
 
 function totalVacationCost() {
     value= "l' hotel coute "+hotelCost()+"$  le billets d'avions coute "+planeRideCost()+"$  la voiture coute"+rentalCarCost()
