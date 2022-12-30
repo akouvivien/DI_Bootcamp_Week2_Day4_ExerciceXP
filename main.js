@@ -144,11 +144,19 @@ const Price = prices[elements]
             console.log("le prix de l'article" + elements+ " est ,"+QStock)
         }else {console.log("nous n'avons pas"+elements+", en stock")}
   
-}
+ }
 }
 
 myBill()
 
+// Exercice 5 : Qu'y A-T-Il Dans Mon Portefeuille ?
+// Des Instructions
+// Remarque : Lire l'illustration (point 4), tout en lisant les instructions
+
+function changeEnough(itemPrice, amountOfChange) {
+    
+    
+}
 
 // **********🌟 Exercise 6 : Vacations Costs**********
 // Instructions
@@ -199,6 +207,13 @@ function planeRideCost() {
 planeRideCost()
 
 
+// Define a function called rentalCarCost().
+// It should ask the user for the number of days they would like to rent the car.
+// If the user doesn’t answer or if the answer is not a number, ask again.
+// Calculate the cost to rent the car. The car costs $40 everyday.
+// If the user rents a car for more than 10 days, they get a 5% discount.
+// The function should return the total price of the car rental.
+
 function rentalCarCost() {
 
     do {
@@ -214,11 +229,14 @@ function rentalCarCost() {
     return value
 
 }
-
-rentalCarCost()
+// Define a function called totalVacationCost() that returns the total cost of the user’s vacation by calling the 3 functions that you created above.
+// Example : The car cost: $x, the hotel cost: $y, the plane tickets cost: $z.
+// Hint: You have to call the functions hotelCost(), planeRideCost() and rentalCarCost() inside the function totalVacationCost().
+// rentalCarCost()
 
 function totalVacationCost() {
     value= "l' hotel coute "+hotelCost()+"$  le billets d'avions coute "+planeRideCost()+"$  la voiture coute"+rentalCarCost()
     console.log(value)
 }
+// Call the function totalVacationCost()
 totalVacationCost()
