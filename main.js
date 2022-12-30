@@ -212,7 +212,7 @@ hotelCost()
 function planeRideCost() {
 
     do {
-        let texte = prompt(" londres = 138$ ; pAris 220$ et autre 300$ ")
+        let texte = prompt(" choississez votre destiniation entre paris londres et autres ")
        minius =texte.toLowerCase() 
         if (minius == "londres") {
             value = 183
