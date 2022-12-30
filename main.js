@@ -149,14 +149,34 @@ const Price = prices[elements]
 
 myBill()
 
-// Exercice 5 : Qu'y A-T-Il Dans Mon Portefeuille ?
-// Des Instructions
-// Remarque : Lire l'illustration (point 4), tout en lisant les instructions
+
+// **********🌟 Exercise 5 : What’s In My Wallet ?**********
+// Instructions
+// Note: Read the illustration (point 4), while reading the instructions
+
+// Create a function named changeEnough(itemPrice, amountOfChange) that receives two arguments :
+// an item price
+// and an array representing the amount of change in your pocket.
+
+// In the function, determine whether or not you can afford the item.
+// If the sum of the change is bigger or equal than the item’s price (ie. it means that you can afford the item), the function should return true
+// If the sum of the change is smaller than the item’s price (ie. it means that you cannot afford the item) the function should return false
+
 
 function changeEnough(itemPrice, amountOfChange) {
-    
-    
+    let priceInMyPossession = 0;
+    let amountOfChangeNumber = [0.25, 0.1, 0.05, 0.01];
+    for(let i = 0; i<amountOfChangeNumber.length; i++) {
+        priceInMyPossession+=(amountOfChangeNumber[i]*amountOfChange[i]);
+    }
+
+    if(priceInMyPossession >= itemPrice) {
+        return true;
+    }
+    return false;
 }
+
+changeEnough(0.75, [0,0,20,5]);
 
 // **********🌟 Exercise 6 : Vacations Costs**********
 // Instructions
